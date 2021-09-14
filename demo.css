@@ -1,0 +1,410 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(https://wallpaperaccess.com/full/1216232.jpg);
+    background-size: cover;
+    padding-bottom: auto;
+    background-color: black;
+    background-attachment: fixed;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* Header */
+#fullstacklogo {
+    width: 50px;
+    height: 55px;
+    padding: 5px;
+}
+
+
+/* Notice Strip */
+.animation-container {
+    background-color: skyblue;
+    padding: 1px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to right, skyblue, greenyellow);
+}
+
+
+.animation-strip {
+    font-weight: bold;
+    position: relative;
+    animation-name: horizontal-movement;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes horizontal-movement {
+    0% {
+        color: blue;
+        left: 0px;
+        top: 0px;
+    }
+
+    100% {
+        color: red;
+        left: 1150px;
+        top: 0px;
+    }
+
+}
+
+/* Form  */
+
+form {
+    border: 2px solid grey;
+    border-radius: 4px;
+    padding: 5px;
+    width: max-content;
+    display: flow-root;
+    margin: auto;
+    height: auto;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), white 50%, rgba(0, 0, 0, 0));
+}
+
+form:hover {
+    box-shadow: 0 0 10px 5px skyblue;
+}
+
+#form-heading {
+
+    text-align: center;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 5px;
+
+    background: rgba(0, 0, 128, 0.507);
+}
+
+i {
+    padding: 15px;
+}
+
+#t_c {
+    margin: 5px;
+}
+
+#submitbutton {
+    width: 100px;
+    margin: 5px;
+    margin-left: 45px;
+}
+
+#resetbutton {
+    width: 100px;
+    margin: 5px;
+}
+
+
+/* Honey Comb grid */
+
+.item {
+    width: 170px;
+    height: 175px;
+    background-color: white;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+}
+
+.item::before {
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 175px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.item:hover::before {
+    background-color: rgb(24, 29, 35, 0);
+}
+
+.firstRow {
+    display: grid;
+    justify-content: center;
+}
+
+.secondRow {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 175px 175px 175px 175px;
+    margin: -39px 0 0 5px;
+}
+
+.thirdRow {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 175px 175px 175px 175px;
+    margin: -39px 0 0 -170px;
+}
+
+.fourthRow {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 175px 175px;
+    margin: -39px 0 0 5px;
+}
+
+
+.firstRow .item {
+    background-image: url("https://besthqwallpapers.com/Uploads/27-1-2020/119894/thumb2-html5-logo-white-silk-texture-html5-emblem-programming-language-html.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.secondRow .item:nth-child(1) {
+    background-image: url("https://www.codespot.org/assets/css.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.secondRow .item:nth-child(2) {
+    background-image: url("https://pngimage.net/wp-content/uploads/2018/06/logo-bootstrap-png-3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.secondRow .item:nth-child(3) {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFu963SmaEElqJi1r5YiYE7L4Je0o-sbRz09QefiKJQYQuUCVvBq1kWLrWca-xLLObqKg&usqp=CAU");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.secondRow .item:nth-child(4) {
+    background-image: url("https://cdn.techozu.com/wp/2020/11/JavaScript_Featured-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 350px 200px;
+}
+
+.thirdRow .item:nth-child(1) {
+    background-image: url("https://wallpapercave.com/wp/wp8724850.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.thirdRow .item:nth-child(2) {
+    background-image: url("https://ih1.redbubble.net/image.569499515.9730/pp,840x830-pad,1000x1000,f8f8f8.u2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.thirdRow .item:nth-child(3) {
+    background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--4I6BM-mT--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/lubr9bb4d2obyx9lb3px.png");
+    background-size: cover;
+    background-position: center;
+    background-size: 280px 175px;
+    background-repeat: no-repeat;
+}
+
+.thirdRow .item:nth-child(4) {
+    background-image: url("https://hackr.io/tutorials/learn-express-js/logo/logo-express-js?ver=1557508379");
+    background-size: cover;
+    background-size: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fourthRow .item:nth-child(1) {
+    background-image: url("https://www.sketchappsources.com/resources/source-image/python-logo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fourthRow .item:nth-child(2) {
+    background-image: url("https://cdn.vox-cdn.com/thumbor/VoXJ8IaxCj5_U-366JhtUHLkdQ0=/0x0:640x427/1400x1050/filters:focal(0x0:640x427):format(jpeg)/cdn.vox-cdn.com/assets/1087137/java_logo_640.jpg");
+    background-size: cover;
+    background-size: 180px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+    margin: auto;
+    height: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+
+}
+
+.footer-row {
+    display: flex;
+
+}
+
+.footer-col {
+    flex: 50%;
+    padding: 10px;
+    margin: 10px;
+
+
+}
+
+#footerright a {
+    text-decoration: none;
+    float: right;
+    color: blue;
+    font-size: 25px;
+    border: 0.1px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#footerright a:hover {
+    box-shadow: 0 0 10px 4px skyblue;
+}
+
+
+
+/****** Responsive *******/
+
+
+@media (max-width: 768.9px) {
+
+
+    #submitbutton {
+        width: 100px;
+        margin: auto;
+    }
+
+    .honey-comb {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+
+    .honey-comb .item {
+        width: 70px;
+        height: 75px;
+        display: flex;
+        margin-top: 15px;
+        margin-right: 5px;
+
+    }
+
+    .honey-comb .firstRow {
+        display: flex;
+    }
+
+    .honey-comb .secondRow {
+        display: flex;
+        margin: -30px;
+
+
+    }
+
+    .honey-comb .thirdRow {
+        display: flex;
+        margin: -30px;
+        margin-left: -103px;
+    }
+
+    .honey-comb .fourthRow {
+        display: flex;
+        margin: -30px;
+    }
+
+    .item::before {
+        content: '';
+        position: absolute;
+        width: 90px;
+        height: 95px;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .firstRow {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .secondRow {
+        display: flex;
+        justify-content: center;
+        grid-template-columns: 95px 95px;
+
+    }
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    #submitbutton {
+        width: 100px;
+        margin: auto;
+    }
+
+    .honey-comb {
+        margin-top: 50px;
+        margin-left: 80px;
+    }
+
+    .honey-comb .item {
+        width: 90px;
+        height: 95px;
+        display: flex;
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+
+    .honey-comb .firstRow {
+        display: flex;
+    }
+
+    .honey-comb .secondRow {
+        display: flex;
+        margin: -30px;
+    }
+
+    .honey-comb .thirdRow {
+        display: flex;
+        margin: -30px;
+        margin-left: -125px;
+    }
+
+    .honey-comb .fourthRow {
+        display: flex;
+        margin: -30px;
+    }
+
+    .item::before {
+        content: '';
+        position: absolute;
+        width: 90px;
+        height: 95px;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .firstRow {
+        display: flex;
+        justify-content: center;
+    }
+
+    .secondRow {
+        display: flex;
+        justify-content: center;
+        grid-template-columns: 95px 95px;
+    }
+}
