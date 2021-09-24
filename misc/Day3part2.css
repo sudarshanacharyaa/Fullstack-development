@@ -1,0 +1,26 @@
+.clipping {
+    position: absolute;
+    clip: rect(200px, 1000px, 500px, 600px);
+
+}
+
+#unscaled {
+    margin: 150px;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    border: 5px solid black;
+}
+
+#scale {
+    margin: 150px;
+    width: 200px;
+    height: 100px;
+    background-color: greenyellow;
+    border: 5px solid red;
+    transform: scale(2, 3);
+}
+
+#rotate {
+    transform: rotateX(150deg);
+}

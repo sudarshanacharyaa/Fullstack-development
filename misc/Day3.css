@@ -1,0 +1,177 @@
+body,
+html {
+    height: 100%;
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    color: white;
+    text-align: left;
+    background-color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+#logo {
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.animation-container {
+    background-color: skyblue;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to right, skyblue, greenyellow);
+}
+
+.animation-strip {
+
+    padding: 2px;
+    color: red;
+    font-variant: small-caps;
+    font-size: 22px;
+    font-weight: bolder;
+    position: relative;
+    animation-name: horizontal-movement;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes horizontal-movement {
+    0% {
+        color: blue;
+        left: 0px;
+        top: 0px;
+    }
+
+    100% {
+        color: red;
+        left: 1150px;
+        top: 0px;
+    }
+
+}
+
+#Fullstack {
+    min-height: 50%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--DxkKjhGP--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/s3un0bj59b1heym211tz.jpg);
+}
+
+header h5 {
+    display: inline;
+    padding-bottom: 70px;
+}
+
+header nav {
+    float: right;
+    display: inline;
+}
+
+header nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 100px;
+    margin-bottom: 0%;
+    text-decoration: none;
+    background-color: gray;
+    display: inline;
+
+}
+
+header nav a:hover {
+    background-color: navy;
+}
+
+header img {
+    float: left;
+    height: 140px;
+    margin: 10px;
+}
+
+
+form {
+    max-width: 50%;
+    height: auto;
+    float: right;
+    padding: auto;
+    color: white;
+    font-weight: 600;
+    font-variant: small-caps;
+    text-align: center;
+
+}
+
+form h3 {
+    font-family: cursive;
+    font-style: italic;
+}
+
+.box {
+    font-size: 22px;
+    text-align: center;
+    background-color: green;
+    color: white;
+    display: none;
+}
+
+@media (max-width:425px) {
+    #box-1 {
+        display: block;
+        background-color: red;
+    }
+}
+
+@media (min-width:425.1px) and (max-width:768px) {
+    #box-2 {
+        display: block;
+        background-color: cyan;
+    }
+}
+
+@media (min-width:768.1px) and (max-width:1024px) {
+    #box-3 {
+        display: block;
+        background-color: blue;
+    }
+}
+
+@media (min-width:1024.1px) and (max-width:1440px) {
+    #box-4 {
+        display: block;
+        background-color: hotpink;
+    }
+}
+
+@media (min-width:1440.1px) {
+    #box-5 {
+        display: block;
+        background-color: slategray;
+    }
+}
+
+footer {
+    color: white;
+    background-color: black;
+    font-style: italic;
+    background-image: repeating-linear-gradient(to bottom right, gray, black);
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-variant: small-caps;
+    align-content: center;
+    text-align: center;
+
+}

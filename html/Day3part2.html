@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Day3part2.css">
+    <title>Day 3 CSS properties</title>
+</head>
+
+<body>
+    <div class="css-container">
+        <span>
+            <h1>This is normal text</h1>
+        </span>
+        <div>This line has to be rotated (Normal).</div>
+        <span>
+            <h1>This is rotated text</h1>
+        </span>
+        <div id="rotate">
+            This is a rotated line (150 degrees).
+        </div>
+
+        <h1>This is normal text without scaling</h1>
+        <div>
+            <p id="unscaled">This is not a scaled text.</p>
+        </div>
+
+        <h1>This is text with scaling</h1>
+        <div id="scale">
+            <p> Hi this paragraph text needs to scaled. So it is scaled.</p>
+        </div>
+
+        <div id="clip">
+            <div>
+                <h1>This is unclipped image</h1>
+                <img
+                    src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5e4a3210a854780006b18efa%2FArtificial-Human-Beings--The-Amazing-Examples-Of-Robotic-Humanoids-And-Digital-Humans%2F960x0.jpg%3Ffit%3Dscale">
+            </div>
+
+            <h1>This is clipped image</h1>
+            <div class="clipping">
+                <img
+                    src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5e4a3210a854780006b18efa%2FArtificial-Human-Beings--The-Amazing-Examples-Of-Robotic-Humanoids-And-Digital-Humans%2F960x0.jpg%3Ffit%3Dscale">
+            </div>
+        </div>
+</body>
+
+</html>
