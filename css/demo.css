@@ -344,7 +344,15 @@ footer {
     margin: 10px 0;
 }
 
-
+#card-heading{
+    color: white;
+    font-variant: small-caps;
+    font-weight: bold;
+    background: linear-gradient(to right, greenyellow ,navy);;
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+}
 
 /****** Responsive *******/
 
