@@ -15,8 +15,8 @@ body {
 .whole-wrapper{
     margin: 0 auto;
     overflow-x: hidden;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(https://wallpaperaccess.com/full/1216232.jpg);
-    background-size: 100% 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(https://wallpaperaccess.com/full/5054236.jpg);
+    background-size: 100% ;
     height: 100%;
     
 }
@@ -67,6 +67,19 @@ section .notice{
 
 }
 
+/* Hero Carousel */
+.carousel-item{
+    height: 650px;
+}
+.carousel-item img{
+    height: 650px;
+}
+
+/* Modal */
+.modal{
+
+}
+
 
 /* Hero Banner */
 .container-fluid{
@@ -76,7 +89,7 @@ section .notice{
 
 }
 .hero-banner{
-    background: linear-gradient(navy,greenyellow);
+    background: linear-gradient(navy,black);
     width: inherit;
     height: auto;
     margin: 0%;
@@ -86,6 +99,7 @@ section .notice{
     flex-direction: column;
     padding: 200px;
     color: white;
+    margin-top: 100px;
 }
 
 .hero-banner h1{
@@ -180,6 +194,73 @@ i {
 
 .item:hover::before {
     background-color: rgb(24, 29, 35, 0);
+}
+
+.firstRow .item:hover:nth-child(1){
+    
+    transform: scale(1.2) rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+    z-index: 99;
+}
+
+.secondRow .item:hover:nth-child(1){
+    transform: scale(1.2) rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+    z-index: 99;
+}
+
+.secondRow .item:hover:nth-child(2){
+    transform: scale(1.2) rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+    z-index: 99;
+}
+
+.secondRow .item:hover:nth-child(3){
+    transform: scale(1.2) rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+    z-index: 99;
+}
+
+.secondRow .item:hover:nth-child(4){
+    transform: scale(1.2) rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+    z-index: 99;
+}
+
+.thirdRow .item:hover:nth-child(1){
+    transform: rotateY(90deg) scale(1.2);
+    transition: transform 0.5s ease-in-out;
+    z-index: 99;
+}
+
+.thirdRow .item:hover:nth-child(2){
+    transform: rotateY(90deg) scale(1.2);
+    transition: transform 0.5s ease-in-out;
+    z-index: 99;
+}
+
+.thirdRow .item:hover:nth-child(3){
+    transform: rotateY(90deg) scale(1.2);
+    transition: transform 0.5s ease-in-out;
+    z-index: 99;
+}
+
+.thirdRow .item:hover:nth-child(4){
+    transform: rotateY(90deg) scale(1.2);
+    transition: transform 0.5s ease-in-out;
+    z-index: 99;
+}
+
+.fourthRow .item:hover:nth-child(1){
+    transform: rotateX(90deg) scale(1.2);
+    transition: transform 0.5s ease-in-out;
+    z-index: 99;
+}
+
+.fourthRow .item:hover:nth-child(2){
+    transform: rotateX(90deg) scale(1.2);
+    transition: transform 0.5s ease-in-out;
+    z-index: 99;
 }
 
 .firstRow {
@@ -289,12 +370,16 @@ i {
     background-repeat: no-repeat;
 }
 
+.custom-container{
+    margin: 200px auto;
+}
+
 footer {
     /* position: fixed; */
     left: 0;
     bottom: 0;
     width: inherit;
-    background-color: rgba(0, 0, 0, 0.479);
+    background-color: rgb(0, 0, 0);
     color: white;
     margin: auto;
     height: auto;
@@ -309,7 +394,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    margin-top: 200px;
+    
     position: sticky;
     bottom: 0px;
 
@@ -327,7 +412,6 @@ footer {
 
 #footerright a {
     text-decoration: none;
-    
     color: blue;
     font-size: 25px;
     border: 0.1px solid rgba(0, 0, 0, 0);
@@ -362,7 +446,7 @@ footer {
         background: linear-gradient(navy,greenyellow);
         width: 100%;
         height: auto;
-        margin: 0 auto;
+        margin: 10px auto;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;

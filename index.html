@@ -36,9 +36,6 @@
                             <a class="nav-link" href="#">PYTHON</a>
                             <a class="nav-link" href="#">JAVA</a>
                             <a class="nav-link" href="#">BOOTSTRAP</a>
-                            <a class="nav-link" href="#">NODE.JS</a>
-                            <a class="nav-link" href="#">REACT.JS</a>
-                            <a class="nav-link" href="#">PHP</a>
                             <ul class="nav nav-pills nav-fill">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
@@ -81,23 +78,57 @@
             </div>
         </section>
 
-        <section class="container-fluid">
-            <div class="hero-banner">
-                <h1>FRONTEND | AEM STACK | MAGNOLIA STACK | BACKEND</h1>
-                <h3>One stop destination</h3>
-                <div class="buttonwrapper">
-                    <button onclick="form" class="btn btn-success" type="button">Sign up</button>
-                    <button class="btn btn-secondary" type="button">Sign in</button>
-                </div>
-
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-        </section>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/apple_macbook_pro_laptop_colorful-wallpaper-1440x900.jpg" class="d-block w-100"
+                        alt="qwerty">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Funding Partner</h5>
+                        <p>Our official sponsers are Apple Inc.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/rog_abstract-wallpaper-1440x900.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Our Developers</h5>
+                        <p>Our developers have designed the beauty and the beast of gaming world - Republic of Gamers</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/apple_magic_mouse_2_colorful_lighting-wallpaper-1440x900.jpg"
+                        class="d-block w-100" alt="beautiful">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Paid Promotions</h5>
+                        <p>Apple Magic mouse is on sale at Apple online stores, to get an additional discount of 10% apply your geeksofweb voucher code while placing order. </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
         <main>
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <form class="form" action="#">
+                        <form class="form">
                             <heading class="text-uppercase">
                                 <h3 id="form-heading">Sign <large class="text-muted">up</large>
                                 </h3>
@@ -143,7 +174,40 @@
                                 <span id="t_c">
                                     <input class="col-md-1" type="checkbox" required>
                                 </span>
-                                I accept the terms and conditions.
+                                I accept the
+                                <a href="" data-bs-toggle="modal" data-bs-target="#termsandconds">
+                                    terms and conditions</a>.
+
+                                <div class="modal" id="termsandconds" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Terms and Conditions</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                                                    aperiam est ipsam ab beatae voluptates quam ipsum repellendus eos
+                                                    quod maxime facere, quos dignissimos. Est nesciunt illum sunt, illo
+                                                    vel consectetur alias eaque ad atque exercitationem sapiente nam
+                                                    ipsam velit nemo inventore pariatur aperiam recusandae voluptas
+                                                    officia animi. Odit harum voluptas hic perferendis ex deserunt
+                                                    molestiae sit illo magni quo dolores saepe consequatur nulla atque,
+                                                    illum qui ratione fugit, vitae repellat! Sunt officiis illo
+                                                    molestiae rerum nisi fugiat, eligendi consequuntur harum ut
+                                                    repellendus expedita omnis nihil, atque iusto, ipsum accusantium
+                                                    delectus quae repudiandae fugit distinctio facere dolor praesentium!
+                                                    Doloribus, odit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <hr>
                             <input type="submit" value="Signup" id="submitbutton" class="btn btn-success">
@@ -202,7 +266,7 @@
             </div>
         </main>
 
-        <div class="container">
+        <div class="container custom-container">
             <h2 id="card-heading">CMS Technologies </h2>
             <div class="row">
                 <div class="col-md-4 col-lg-4 col-sm-12">
@@ -213,7 +277,7 @@
                                     class="img-fluid"></a>
                         </div>
 
-                        <div class="card-body">
+                        <div class="card-body ">
                             <h4 class="card-title">Adobe Experience Manager</h4>
                             <p class="card-text">Adobe Experience Manager (AEM), is a comprehensive content management
                                 solution for building websites, mobile apps and forms. And it makes it easy to manage
@@ -254,6 +318,116 @@
 
             </div>
         </div>
+        <div class="container custom-container">
+            <h2 id="card-heading">Android Development</h2>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card ">
+                        <div class="card-img">
+                            <a href="#"><img src="https://images.hdqwalls.com/wallpapers/flutter-logo-4k-qn.jpg"
+                                    class="img-fluid"></a>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Flutter</h4>
+                            <p class="card-text">Flutter is an open-source UI software development kit created by
+                                Google. It is used to develop cross platform applications for Android, iOS, Linux, Mac,
+                                Windows, Google Fuchsia, and the web from a single codebase..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <a href="#"><img src="https://www.xda-developers.com/files/2018/03/android-studio-logo.png"
+                                    class="img-fluid"></a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Android Studio</h4>
+                            <p class="card-text">Android Studio is the official integrated development environment for
+                                Google's Android operating system, built on JetBrains' IntelliJ IDEA software and
+                                designed specifically for Android development.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <a href="#"><img src="https://www.luminis.eu/wp-content/uploads/2020/12/kotlin.jpg"
+                                    class="img-fluid"></a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Kotlin</h4>
+                            <p class="card-text">Kotlin is a cross-platform, statically typed, general-purpose
+                                programming language with type inference. Kotlin is designed to interoperate fully with
+                                Java, and the JVM version of Kotlin's standard library depends on the Java Class
+                                Library, but type inference allows its syntax to be more concise.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container custom-container">
+            <h2 id="card-heading"> Hot Topics </h2>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card ">
+                        <div class="card-img">
+                            <a href="#"><img src="https://wallpaperaccess.com/full/1398313.jpg" class="img-fluid"></a>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Artificial Intelligence</h4>
+                            <p class="card-text">Artificial intelligence is the simulation of human intelligence
+                                processes by machines, especially computer systems. Specific applications of AI include
+                                expert systems, natural language processing, speech recognition and machine vision.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <a href="#"><img src="https://kbwallet.io/wp-content/uploads/2021/05/blockchain2.jpg"
+                                    class="img-fluid"></a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Blockchain</h4>
+                            <p class="card-text">Blockchains are typically managed by a peer-to-peer network for use as
+                                a publicly distributed ledger, where nodes collectively adhere to a protocol to
+                                communicate and validate new blocks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <a href="#"><img
+                                    src="https://community.connection.com/wp-content/uploads/2019/05/902489-Ditching-the-Hardware-Joseph-Salzer-BLOG.png"
+                                    class="img-fluid"></a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Serverless Technology</h4>
+                            <p class="card-text">Serverless is a way to describe the services, practices, and strategies
+                                that enable you to build more agile applications so you can innovate and respond to
+                                change faster. </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <section class="container-fluid">
+            <div class="hero-banner">
+                <h1>WEB DEVELOPMENT | CMS TECHNOLOGIES | ANDROID DEVELOPMENT | TECHNOLOGY BUZZ</h1>
+                <h3>One stop destination</h3>
+                <div class="buttonwrapper">
+                    <button  class="btn btn-success" type="button">Join Now</button>
+                </div>
+
+            </div>
+        </section>
 
         <footer class="container-fluid">
             <div class="footer-row">
@@ -289,7 +463,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://kit.fontawesome.com/8ade5e9773.js" crossorigin="anonymous"></script>
 
 
